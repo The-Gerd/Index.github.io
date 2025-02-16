@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Empezar Pedido - Exportación a Canadá</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="Logo/Logo.png" alt="Logo de Exportación a Canadá">
+            <h1>Exportación a Canadá</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="productos.html">Productos</a></li>
+                <li><a href="pedido.html">Exportar</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="pedido">
+        <h2>Empezar Pedido</h2>
+        <p>Selecciona los productos que deseas exportar a Canadá:</p>
+
+        <!-- Lista de productos -->
+        <div class="productos">
+            <div class="producto">
+                <img src="Imagenes/Blanco3.jpg" alt="Alimento 1">
+                <h3>Alimento 1</h3>
+                <p>Descripción del alimento 1.</p>
+                <p class="precio">$10.00 por unidad</p>
+                <button onclick="agregarAlPedido('Alimento 1', 10)">Agregar al Pedido</button>
+            </div>
+            <div class="producto">
+                <img src="Imagenes/en blanco.jpg" alt="Bebida 1">
+                <h3>Bebida 1</h3>
+                <p>Descripción de la bebida 1.</p>
+                <p class="precio">$5.00 por unidad</p>
+                <button onclick="agregarAlPedido('Bebida 1', 5)">Agregar al Pedido</button>
+            </div>
+            <div class="producto">
+                <img src="Imagenes/Blanco2.jpg" alt="Materia Prima 1">
+                <h3>Materia Prima 1</h3>
+                <p>Descripción de la materia prima 1.</p>
+                <p class="precio">$20.00 por kg</p>
+                <button onclick="agregarAlPedido('Materia Prima 1', 20)">Agregar al Pedido</button>
+            </div>
+        </div>
+
+        <!-- Resumen del pedido -->
+        <div class="resumen-pedido">
+            <h3>Tu Pedido</h3>
+            <ul id="lista-pedido"></ul>
+            <p>Total: $<span id="total-pedido">0.00</span></p>
+        </div>
+
+        <!-- Proceso de pedido (formulario) -->
+        <div class="proceso-pedido">
+            <h3>Proceso de Pedido</h3>
+            <form id="formulario-pedido">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="direccion">Dirección de envío:</label>
+                <textarea id="direccion" name="direccion" required></textarea>
+
+                <label for="comentarios">Comentarios adicionales:</label>
+                <textarea id="comentarios" name="comentarios"></textarea>
+
+                <button type="submit">Confirmar Pedido</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2023 Exportación a Canadá. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="script-pedido.js"></script>
+</body>
+</html>

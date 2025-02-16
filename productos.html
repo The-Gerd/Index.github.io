@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Productos de Exportación - Canadá</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="Logo/Logo.png" alt="Logo de Exportación a Canadá">
+            <h1>Exportación a Canadá</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="productos.html">Productos</a></li>
+                <li><a href="pedido.html">Exportar</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="productos">
+        <h2>Nuestros Productos de Exportación</h2>
+        <div class="categorias">
+            <button onclick="mostrarCategoria('alimentos')">Alimentos</button>
+            <button onclick="mostrarCategoria('bebidas')">Bebidas</button>
+            <button onclick="mostrarCategoria('materias-primas')">Materias Primas</button>
+        </div>
+
+        <!-- Categoría: Alimentos -->
+        <div id="alimentos" class="categoria">
+            <h3>Alimentos</h3>
+            <div class="lista-productos">
+                <div class="producto">
+                    <img src="Imagenes/Blanco3.jpg" alt="Alimento 1">
+                    <h4>Alimento 1</h4>
+                    <p>Descripción del alimento 1.</p>
+                    <p class="precio">$10.00 por unidad</p>
+                </div>
+                <div class="producto">
+                    <img src="Imagenes/Blanco3.jpg" alt="Alimento 2">
+                    <h4>Alimento 2</h4>
+                    <p>Descripción del alimento 2.</p>
+                    <p class="precio">$12.00 por unidad</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Categoría: Bebidas -->
+        <div id="bebidas" class="categoria">
+            <h3>Bebidas</h3>
+            <div class="lista-productos">
+                <div class="producto">
+                    <img src="Imagenes/Blanco2.jpg" alt="Bebida 1">
+                    <h4>Bebida 1</h4>
+                    <p>Descripción de la bebida 1.</p>
+                    <p class="precio">$5.00 por unidad</p>
+                </div>
+                <div class="producto">
+                    <img src="Imagenes/Blanco2.jpg" alt="Bebida 2">
+                    <h4>Bebida 2</h4>
+                    <p>Descripción de la bebida 2.</p>
+                    <p class="precio">$6.00 por unidad</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Categoría: Materias Primas -->
+        <div id="materias-primas" class="categoria">
+            <h3>Materias Primas</h3>
+            <div class="lista-productos">
+                <div class="producto">
+                    <img src="Imagenes/en blanco.jpg" alt="Materia Prima 1">
+                    <h4>Materia Prima 1</h4>
+                    <p>Descripción de la materia prima 1.</p>
+                    <p class="precio">$20.00 por kg</p>
+                </div>
+                <div class="producto">
+                    <img src="Imagenes/en blanco.jpg" alt="Materia Prima 2">
+                    <h4>Materia Prima 2</h4>
+                    <p>Descripción de la materia prima 2.</p>
+                    <p class="precio">$25.00 por kg</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2023 Exportación a Canadá. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="script-productos.js"></script>
+</body>
+</html>
